@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        @font-face {
+            font-family: 'myfont';
+            src: url(fonto.ttf) format('truetype');
+        }
+
+        nav {
+            font-family: 'myfont';
+        }
+
+        body {
+            background-image: linear-gradient(rgba(238, 201, 152, 0.5), rgba(167, 126, 64, 0.5) ), url(bg1.jpg);
+            background-attachment: scroll;
+            background-size: auto;
+        }
+
+        a, ol {
+            text-decoration: none;
+            font-family: myfont;
+            font-size: 1rem;
+        }
+
+        .mask-custom-1 {
+            backdrop-filter: blur(15px);
+            background-color: rgba(255, 255, 255, .2);
+            border-radius: 3em;
+            border: 2px solid rgba(255, 255, 255, .1);
+            background-clip: padding-box;
+            box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+        }
+
+        @media (max-width: 767px) {
+            .bg-image {
+                height: 1400px !important;
+            }
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        @media (max-width: 767px) {
+
+            html,
+            body {
+                height: 2600px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 820px) {
+
+            html,
+            body {
+                height: 1750px;
+            }
+        }
+
+        @media (min-width: 821px) and (max-width: 1025px) {
+
+            html,
+            body {
+                height: 954px;
+            }
+        }
+
+        .phone {
+            border-radius: 40px;
+            min-height: 795px;
+            color: #f8e4e3;
+        }
+
+        .fas {
+            color: #e6cdce;
+        }
+
+        a {
+            color: #993731;
+        }
+
+            a,
+            a:hover {
+                -webkit-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out
+            }
+
+                a:hover {
+                    color: rgba(248, 228, 227, .65)
+                }
+
+        .dots {
+            cursor: pointer
+        }
+
+        .dot {
+            height: 6px;
+            width: 6px;
+            background-color: #b9191e;
+            border-radius: 50%
+        }
+
+        .dot-lg {
+            height: 8px;
+            width: 8px
+        }
+
+        .card {
+            background-color: hsla(1, 42%, 45%, .5);
+            border-radius: 10px
+        }
+
+            .card,
+            .card:hover {
+                -webkit-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out
+            }
+
+                .card:hover {
+                    -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .09);
+                    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .09);
+                    background-color: hsla(1, 42%, 45%, .4)
+                }
+
+        .mask-custom {
+            backdrop-filter: blur(15px);
+            background-color: rgba(255, 255, 255, .2);
+            border: 2px solid rgba(255, 255, 255, .1);
+            background-clip: padding-box;
+            box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+        }
+    </style>
+    <title>first</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="style.css" />
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img style="width: 100px " src="logo.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="login.aspx">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offers.html"> Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partener.aspx"> Management</a>
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold"><a href="menu.html"> HanBite Fusion</a></div>
+                lots of new dishes just came!
+            </div>
+            <span class="badge bg-primary rounded-pill"><a href="#" style="color: white;"> new</a></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold"><a href="healthyfood.html">VitalVeg Bistro </a></div>
+                New offers !
+            </div>
+            <span class="badge bg-primary rounded-pill"><a href="#" style="color: white;"> new</a></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold"><a href="healthyfood.html"> VitalVeg Bistro</a></div>
+                limited time discounts for families
+            </div>
+            <span class="badge bg-primary rounded-pill"><a href="#" style="color: white;"> new</a></span>
+        </li>
+    </ol>
+    <div class="spinner-grow text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <div class="bg-image h-100">
+        <div class="mask" style="background-color: rgba(163, 69, 67, .4);">
+
+            <div class="container-xl container-fluid mt-xl-0 mt-lg-5">
+
+                <div class="row align-items-center vh-100">
+
+                    <div class="col-md-6 col-lg-4 pt-5 pt-lg-0">
+                        <div class="phone mask-custom d-flex align-items-stretch">
+                            <div class="inner px-4 text-center">
+                                <h2 class="mt-5 mb-3" style="letter-spacing: 3px;" data-mdb-toggle="animation"
+                                    data-mdb-animation-start="onLoad" data-mdb-animation="fade-in" data-mdb-animation-duration="1000"
+                                    data-mdb-animation-delay="200">
+                                    Hello, dear customer
+                                </h2>
+                                <p class="lead mb-0" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                   data-mdb-animation="fade-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="300">
+                                    Feeling hungry?
+                                    <br /> exploration time !
+                                </p>
+                                <div class="py-5">
+                                    <img src=""
+                                         alt="" class="w-100" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                         data-mdb-animation="zoom-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="400">
+                                </div>
+                                <h4 class="mb-5" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                    data-mdb-animation="fade-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="500">
+                                    Sections of the foodery !
+                                </h4>
+                                <button type="button" class="btn btn-outline-light btn-block btn-rounded btn-lg"
+                                        data-mdb-ripple-color="light" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                        data-mdb-animation="zoom-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="600">
+                                    Resturants
+                                </button>
+                                <button type="button" class="btn btn-outline-light btn-block btn-rounded btn-lg"
+                                        data-mdb-ripple-color="light" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                        data-mdb-animation="zoom-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="700">
+                                    Forms
+                                </button>
+                                <button type="button" class="btn btn-outline-light btn-block btn-rounded btn-lg"
+                                        data-mdb-ripple-color="light" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                        data-mdb-animation="zoom-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="800">
+                                    Your Profile
+                                </button>
+                                <div class="dots d-flex justify-content-center align-items-center mt-5" data-mdb-toggle="animation"
+                                     data-mdb-animation-start="onLoad" data-mdb-animation="zoom-in" data-mdb-animation-duration="1000"
+                                     data-mdb-animation-delay="900">
+                                    <div class="dot dot-lg mx-1"></div>
+                                    <div class="dot mx-1"></div>
+                                    <div class="dot mx-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 pt-5 pt-lg-0">
+                        <div class="phone mask-custom d-flex align-items-stretch">
+                            <div class="inner px-4 w-100">
+                                <div class="py-5 mt-1 d-flex justify-content-between" data-mdb-toggle="animation"
+                                     data-mdb-animation-start="onLoad" data-mdb-animation="zoom-in" data-mdb-animation-duration="1000"
+                                     data-mdb-animation-delay="100">
+                                    <a href="#!"><i class="fas fa-arrow-left fa-lg"></i></a>
+                                    <a href="#!"><i class="fas fa-ellipsis-v fa-lg"></i></a>
+                                </div>
+                                <h4 class="text-center mb-5" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                    data-mdb-animation="fade-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="200">
+                                    Looking For something specific?
+                                </h4>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card mb-3" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                             data-mdb-animation="zoom-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="300">
+                                            <div class="card-body">
+                                                <a href="menuitalian.html" class="stretched-link">
+                                                    <h5 class="my-2"><i class="fas fa-brain me-2 fa-fw" style="color: #fca984;"></i> italian food</h5>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                             data-mdb-animation="zoom-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="400">
+                                            <div class="card-body">
+                                                <a href="chinesenebu.html" class="stretched-link">
+                                                    <h5 class="my-2">
+                                                        <i class="fas fa-spa me-2 fa-fw" style="color: #fca984;"></i> chinese food
+                                                    </h5>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                             data-mdb-animation="zoom-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="500">
+                                            <div class="card-body">
+                                                <a href="#!" class="stretched-link">
+                                                    <h5 class="my-2"><i class="fas fa-grin-beam me-2 fa-fw" style="color: #fca984;"></i> traditional meals</h5>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                             data-mdb-animation="zoom-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="600">
+                                            <div class="card-body">
+                                                <a href="menu.html" class="stretched-link">
+                                                    <h5 class="my-2"><i class="fas fa-book me-2 fa-fw" style="color: #fca984;"></i> korean food</h5>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                             data-mdb-animation="zoom-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="700">
+                                            <div class="card-body">
+                                                <a href="healthyfood.html" class="stretched-link">
+                                                    <h5 class="my-2"><i class="fas fa-carrot me-2 fa-fw" style="color: #fca984;"></i>healthy meals</h5>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center pb-lg-5 pb-xl-0" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                     data-mdb-animation="fade-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="800">
+                                    <i class="fas fa-heart fa-lg mt-4 pt-2 mb-2"></i>
+                                    <h5 class="mb-0"><a href="blog.html">Explore more</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 pt-5 pt-lg-0">
+                        <div class="phone mask-custom d-flex align-items-stretch">
+                            <div class="inner px-4 w-100 text-center">
+                                <div class="py-5 mt-1 d-flex justify-content-between" data-mdb-toggle="animation"
+                                     data-mdb-animation-start="onLoad" data-mdb-animation="zoom-in" data-mdb-animation-duration="1000"
+                                     data-mdb-animation-delay="100">
+                                    <a href="#!"><i class="fas fa-arrow-left fa-lg"></i></a>
+                                    <a href="#!"><i class="fas fa-ellipsis-v fa-lg"></i></a>
+                                </div>
+                                <i class="fas fa-brain fa-2x mb-3" style="color: #fca984;" data-mdb-toggle="animation"
+                                   data-mdb-animation-start="onLoad" data-mdb-animation="fade-in" data-mdb-animation-duration="1000"
+                                   data-mdb-animation-delay="200"></i>
+                                <h4 class="mb-3" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                    data-mdb-animation="fade-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="300">
+                                    Lots Of resturants
+                                </h4>
+                                <h6 class="mb-4 pb-2" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                    data-mdb-animation="fade-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="400">
+                                    new flavors new advanteures
+                                </h6>
+                                <div class="ratio ratio-16x9" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                     data-mdb-animation="zoom-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="500">
+                                    <iframe width="560" height="315"></iframe>
+                                </div>
+                                <p class="mt-4 pt-1 text-start" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                   data-mdb-animation="fade-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="600">
+                                    Savor the Flavors of Perfection
+                                    we believe in the art of cooking. Our menu is a symphony of flavors, blending traditional techniques with innovative twists. From mouthwatering appetizers to delectable main courses and divine desserts, every dish is a celebration of taste and texture.
+                                </p>
+                                <h5 class="mt-5 mb-4" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                    data-mdb-animation="fade-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="700">
+                                    <a href="#!">View resturants</a>
+                                </h5>
+
+                                <div class="d-flex justify-content-end" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                     data-mdb-animation="zoom-in" data-mdb-animation-duration="1000" data-mdb-animation-delay="800">
+                                    <a href=""><i class="fas fa-cog fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <br />
+
+
+    <br />
+
+
+    <footer>
+        <div class="bg-image"
+             style="background-image: url(); height: 700px;">
+            <div class="mask d-flex align-items-center h-100">
+                <div class="container">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="card mask-custom-1 py-5 text-white">
+                                <div class="card-body">
+                                    <img class="rounded-circle shadow-2-strong mb-5"
+                                         src="back.jpg" alt="avatar" style="width: 100px;"
+                                         data-mdb-toggle="animation" data-mdb-animation-start="onLoad" data-mdb-animation="slide-in-left"
+                                         data-mdb-animation-duration="1000" data-mdb-animation-delay="200">
+                                    <h5 class="mb-4" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                        data-mdb-animation="slide-in-left" data-mdb-animation-duration="1000"
+                                        data-mdb-animation-delay="300">
+                                        Shahd Tamer
+                                    </h5>
+                                    <p class="mb-4" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                       data-mdb-animation="slide-in-left" data-mdb-animation-duration="1000"
+                                       data-mdb-animation-delay="400">
+                                        Backend Developer
+                                    </p>
+                                    <ul class="list-unstyled mb-0" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                        data-mdb-animation="slide-in-left" data-mdb-animation-duration="1000"
+                                        data-mdb-animation-delay="500">
+                                        <a href="#!" class="px-1">
+                                            <i class="fab fa-github text-white"></i>
+                                        </a>
+                                        <a href="#!" class="px-1">
+                                            <i class="fab fa-twitter text-white"></i>
+                                        </a>
+                                        <a href="#!" class="px-1">
+                                            <i class="fab fa-linkedin-in text-white"></i>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="card mask-custom-1 py-5 text-white">
+                                <div class="card-body">
+                                    <img class="rounded-circle shadow-2-strong mb-5"
+                                         src="front.jpg" alt="avatar" style="width: 100px;"
+                                         data-mdb-toggle="animation" data-mdb-animation-start="onLoad" data-mdb-animation="slide-in-left"
+                                         data-mdb-animation-duration="1000" data-mdb-animation-delay="200">
+                                    <h5 class="mb-4" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                        data-mdb-animation="slide-in-left" data-mdb-animation-duration="1000"
+                                        data-mdb-animation-delay="300">
+                                        Hana Tamer & Mariam Taher
+                                    </h5>
+                                    <p class="mb-4" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                       data-mdb-animation="slide-in-left" data-mdb-animation-duration="1000"
+                                       data-mdb-animation-delay="400">
+                                        Front End developer
+                                    </p>
+                                    <ul class="list-unstyled mb-0" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                        data-mdb-animation="slide-in-left" data-mdb-animation-duration="1000"
+                                        data-mdb-animation-delay="500">
+                                        <a href="#!" class="px-1">
+                                            <i class="fab fa-facebook-f text-white"></i>
+                                        </a>
+                                        <a href="#!" class="px-1">
+                                            <i class="fab fa-twitter text-white"></i>
+                                        </a>
+                                        <a href="#!" class="px-1">
+                                            <i class="fab fa-linkedin-in text-white"></i>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-0">
+                            <div class="card mask-custom-1 py-5 text-white">
+                                <div class="card-body">
+                                    <img class="rounded-circle shadow-2-strong mb-5"
+                                         src="web.jpg" alt="avatar" style="width: 100px;"
+                                         data-mdb-toggle="animation" data-mdb-animation-start="onLoad" data-mdb-animation="slide-in-left"
+                                         data-mdb-animation-duration="1000" data-mdb-animation-delay="200">
+                                    <h5 class="mb-4" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                        data-mdb-animation="slide-in-left" data-mdb-animation-duration="1000"
+                                        data-mdb-animation-delay="300">
+                                        Mustafa Khalid
+                                    </h5>
+                                    <p class="mb-4" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                       data-mdb-animation="slide-in-left" data-mdb-animation-duration="1000"
+                                       data-mdb-animation-delay="400">
+                                        Web developer
+                                    </p>
+                                    <ul class="list-unstyled mb-0" data-mdb-toggle="animation" data-mdb-animation-start="onLoad"
+                                        data-mdb-animation="slide-in-left" data-mdb-animation-duration="1000"
+                                        data-mdb-animation-delay="500">
+                                        <a href="#!" class="px-1">
+                                            <i class="fab fa-dribbble text-white"></i>
+                                        </a>
+                                        <a href="#!" class="px-1">
+                                            <i class="fab fa-linkedin-in text-white"></i>
+                                        </a>
+                                        <a href="#!" class="px-1">
+                                            <i class="fab fa-instagram text-white"></i>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="container-fluid" style="padding: 0%;">
+
+            <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+                <!-- Grid container -->
+                <div class=" container pt-5">
+                    <!--Grid row-->
+                    <div class="row mt-6">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">About company</h5>
+
+                            <p>
+                                We take pride in our commitment to sustainability and quality. Our ingredients come straight from local farms, ensuring not only the freshest produce but also supporting our community. Taste the difference that thoughtfully sourced ingredients make in every bite.
+                            </p>
+
+
+
+                            <div class="mt-4">
+                                <!-- Facebook -->
+                                <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+                                <!-- Dribbble -->
+                                <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+                                <!-- Twitter -->
+                                <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+                                <!-- Google + -->
+                                <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+                                <!-- Linkedin -->
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+
+                            <ul class="fa-ul" style="margin-left: 1.65em;">
+                                <li class="mb-3">
+                                    <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Alex, Eqypt</span>
+                                </li>
+                                <li class="mb-3">
+                                    <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@example.com</span>
+                                </li>
+                                <li class="mb-3">
+                                    <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
+                                </li>
+                                <li class="mb-3">
+                                    <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">Offers hours</h5>
+
+                            <table class="table text-center text-white">
+                                <tbody class="font-weight-normal">
+                                    <tr>
+                                        <td>Mon - Thu:</td>
+                                        <td>8am - 9pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fri - Sat:</td>
+                                        <td>8am - 1am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday:</td>
+                                        <td>9am - 10pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Grid container -->
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2024 Copyright:
+
+                    <!-- Copyright -->
+            </footer>
+
+        </div>
+
+        </div>
+</body>
+</html>

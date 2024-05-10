@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Notification</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .notification {
+            display: none;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #f1f1f1;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+            .notification p {
+                margin: 0;
+            }
+
+            .notification .close {
+                float: right;
+                font-size: 20px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+                .notification .close:hover {
+                    color: red;
+                }
+        body {
+            background-image: linear-gradient(rgba(238, 201, 152, 0.5), rgba(167, 126, 64, 0.5) ), url(bg1.jpg);
+            background-attachment: scroll;
+            background-size: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <button id="showNotificationBtn">Show Notification</button>
+
+    <div id="notificationPopup" class="notification">
+        <span class="close" onclick="closeNotification()">&times;</span>
+        <p>welcome to the foodery!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

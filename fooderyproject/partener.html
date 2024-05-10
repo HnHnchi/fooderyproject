@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>first</title>
+<style>
+    .intro {
+  height: 100%;
+}
+
+@media (min-height: 300px) and (max-height: 450px) {
+  .intro {
+    height: auto;
+  }
+}
+
+.gradient-custom {
+  background: radial-gradient(50% 123.47% at 50% 50%, #00FF94 0%, #720059 100%), linear-gradient(121.28deg, #669600 0%, #FF0000 100%), linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), radial-gradient(100% 164.72% at 100% 100%, #6100FF 0%, #00FF57 100%), radial-gradient(100% 148.07% at 0% 0%, #FFF500 0%, #51D500 100%);
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+</style>
+
+</head>
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img style="width: 100px " src="logo.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="login.aspx">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offers.html"> Offers</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="partener.html"> Become a partener</a>
+                    </li>
+                    <li class="nav-item">
+                      
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br/>
+    <section class="intro">
+        <div class="mask d-flex align-items-center h-100">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card" style="border-radius: 1rem;">
+                  <div class="card-body p-5 text-center">
+      
+                    <div class="my-md-5 pb-5">
+      
+                      <h1 class="fw-bold mb-0" style="font-family: myfont;">Welcome</h1>
+      
+                      <i class="fas fa-user-astronaut fa-3x my-5"></i>
+      
+                      <div class="form-outline mb-4">
+                        <input type="email" id="typeEmail" class="form-control form-control-lg" />
+                        <label class="form-label" for="typeEmail" style="font-family: myfont;">Resturant name</label>
+                      </div>
+      
+                      <div class="form-outline mb-5">
+                        <input type="password" id="typePassword" class="form-control form-control-lg" />
+                        <label class="form-label" for="typePassword" style="font-family: myfont;">Code</label>
+                      </div>
+      
+                      <button class="btn btn-primary btn-lg btn-rounded gradient-custom text-body px-5" type="submit" style="font-family: myfont;">Login</button>
+      
+                    </div>
+      
+                    <div>
+                      <p class="mb-0" style="font-family: myfont;">are you not a partener yet? <a href="register.aspx" class="text-body fw-bold" style="font-family: myfont;">Sign Up</a></p>
+                    </div>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <br/>
+    <div class= "container-fluid" style="padding: 0%;">
+
+        <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+          <!-- Grid container -->
+          <div class=" container pt-5">
+            <!--Grid row-->
+            <div class="row mt-6">
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">About company</h5>
+      
+                <p>
+                    We take pride in our commitment to sustainability and quality. Our ingredients come straight from local farms, ensuring not only the freshest produce but also supporting our community. Taste the difference that thoughtfully sourced ingredients make in every bite.
+                </p>
+      
+               
+      
+                <div class="mt-4">
+                  <!-- Facebook -->
+                  <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+                  <!-- Dribbble -->
+                  <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+                  <!-- Twitter -->
+                  <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+                  <!-- Google + -->
+                  <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+                  <!-- Linkedin -->
+                </div>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                
+      
+                <ul class="fa-ul" style="margin-left: 1.65em;">
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Alex, Eqypt</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@example.com</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Offers hours</h5>
+      
+                <table class="table text-center text-white">
+                  <tbody class="font-weight-normal">
+                    <tr>
+                      <td>Mon - Thu:</td>
+                      <td>8am - 9pm</td>
+                    </tr>
+                    <tr>
+                      <td>Fri - Sat:</td>
+                      <td>8am - 1am</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday:</td>
+                      <td>9am - 10pm</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            
+          <!-- Copyright -->
+        </footer>
+        
+      </div>
+    
+  </div>
+</body>
+</html>

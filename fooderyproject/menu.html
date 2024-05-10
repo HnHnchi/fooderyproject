@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>CodePen - Restaurant - Food menu tab #03</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="./style.css">
+	<script src="Menu.js"></script>
+	<script src="MenuStandard.js"></script>
+	<link rel="stylesheet" href="styleh.css">
+</head>
+<body>
+	<style>
+		@font-face {
+			font-family: 'myfont';
+			src: url(fonto.ttf) format('truetype');
+		}
+
+		nav {
+			font-family: 'myfont';
+		}
+
+		body {
+			background-image: linear-gradient(rgba(238, 201, 152, 0.5), rgba(167, 126, 64, 0.5) ), url(bg1.jpg);
+			background-attachment: scroll;
+			background-size: auto;
+		}
+
+		a, ol {
+			text-decoration: none;
+			font-family: myfont;
+			font-size: 1rem;
+		}
+
+		.mask-custom-1 {
+			backdrop-filter: blur(15px);
+			background-color: rgba(255, 255, 255, .2);
+			border-radius: 3em;
+			border: 2px solid rgba(255, 255, 255, .1);
+			background-clip: padding-box;
+			box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+		}
+
+		@media (max-width: 767px) {
+			.bg-image {
+				height: 1400px !important;
+			}
+		}
+
+		html,
+		body {
+			height: 100%;
+		}
+
+		@media (max-width: 767px) {
+
+			html,
+			body {
+				height: 2600px;
+			}
+		}
+
+		@media (min-width: 768px) and (max-width: 820px) {
+
+			html,
+			body {
+				height: 1750px;
+			}
+		}
+
+		@media (min-width: 821px) and (max-width: 1025px) {
+
+			html,
+			body {
+				height: 954px;
+			}
+		}
+
+		.phone {
+			border-radius: 40px;
+			min-height: 795px;
+			color: #f8e4e3;
+		}
+
+		.fas {
+			color: #e6cdce;
+		}
+
+		a {
+			color: #993731;
+		}
+
+			a,
+			a:hover {
+				-webkit-transition: all .3s ease-in-out;
+				transition: all .3s ease-in-out
+			}
+
+				a:hover {
+					color: rgba(248, 228, 227, .65)
+				}
+
+		.dots {
+			cursor: pointer
+		}
+
+		.dot {
+			height: 6px;
+			width: 6px;
+			background-color: #b9191e;
+			border-radius: 50%
+		}
+
+		.dot-lg {
+			height: 8px;
+			width: 8px
+		}
+
+		.card {
+			background-color: hsla(1, 42%, 45%, .5);
+			border-radius: 10px
+		}
+
+			.card,
+			.card:hover {
+				-webkit-transition: all .3s ease-in-out;
+				transition: all .3s ease-in-out
+			}
+
+				.card:hover {
+					-webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .09);
+					box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .09);
+					background-color: hsla(1, 42%, 45%, .4)
+				}
+
+        .mask-custom {
+            backdrop-filter: blur(15px);
+            background-color: rgba(255, 255, 255, .2);
+            border: 2px solid rgba(255, 255, 255, .1);
+            background-clip: padding-box;
+            box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+            body
+
+        {
+            background-image: linear-gradient(rgba(238, 201, 152, 0.5), rgba(167, 126, 64, 0.5) ), url(bg1.jpg);
+            background-attachment: scroll;
+            background-size: auto;
+        }
+		}
+	</style>
+	<!-- partial:index.partial.html -->
+	<section id="our_menu" class="pt-5 pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="page_title text-center mb-4">
+						<h1>our menu</h1>
+						<div class="single_line"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<ul class="nav nav-tabs menu_tab mb-4" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="breakfast-tab" data-toggle="tab" href="#breakfast" role="tab">Breakfast</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab">Lunch</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="dinner-tab" data-toggle="tab" href="#dinner" role="tab">Dinner</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="tab-content col-lg-12" id="myTabContent">
+					<div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single_menu">
+									<img src="Juk.jpeg" alt="Juk ">
+									<div class="menu_content">
+										<h4>Juk   <span>$24</span></h4>
+										<p>A type of rice porridge, often served with various toppings such as pickled vegetables, shredded meat, and a drizzle of sesame oil.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Kimchi Bokkeumbap.jpg" alt="Kimchi Bokkeumbap">
+									<div class="menu_content">
+										<h4>Kimchi Bokkeumbap <span>$20</span></h4>
+										<p>Fried rice with kimchi, vegetables, and sometimes meat. It's a great way to use leftover rice.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Gyeran Mari.jpeg" alt="Gyeran Mari ">
+									<div class="menu_content">
+										<h4>Gyeran Mari  <span>$45</span></h4>
+										<p>Korean rolled omelet, typically made with beaten eggs mixed with vegetables, and sometimes minced meat, rolled into a log shape and sliced.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Banchan.jpg" alt="Banchan ">
+									<div class="menu_content">
+										<h4>Banchan <span>$24</span></h4>
+										<p>While banchan are typically side dishes served with meals, some of them can be part of a breakfast spread. Examples include kimchi, pickled vegetables, and small portions of stir-fried dishes.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="single_menu">
+									<img src="Hobakjuk.jpg" alt="Hobakjuk">
+									<div class="menu_content">
+										<h4>Hobakjuk<span>$24</span></h4>
+										<p>Pumpkin porridge, made with sweet pumpkin, glutinous rice, and sometimes sweetened with honey.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Namul.jpg" alt="Namul ">
+									<div class="menu_content">
+										<h4>Namul <span>$20</span></h4>
+										<p>Steamed or stir-fried vegetables seasoned with sesame oil, soy sauce, garlic, and other seasonings. They can be a part of a balanced breakfast.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Kongbiji Jjigae.jpeg" alt="Kongbiji Jjigae ">
+									<div class="menu_content">
+										<h4>Kongbiji Jjigae  <span>$45</span></h4>
+										<p>A stew made with ground soybeans, often served with vegetables, tofu, and sometimes pork.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Bibimbap.jpeg" alt="Bibimbap ">
+									<div class="menu_content">
+										<h4>Bibimbap   <span>$24</span></h4>
+										<p>While more commonly eaten for lunch or dinner, bibimbap (mixed rice with vegetables, meat, and gochujang - red chili paste) can also be enjoyed in the morning.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single_menu">
+									<img src="Samgyeopsal.jpeg" alt="Samgyeopsal ">
+									<div class="menu_content">
+										<h4>Samgyeopsal   <span>$35</span></h4>
+										<p>Grilled pork belly slices usually served with garlic, green onions, ssamjang (a thick, spicy paste), and lettuce leaves for wrapping..</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Japchae.jpeg" alt="Japchae">
+									<div class="menu_content">
+										<h4>Japchae<span>$20</span></h4>
+										<p>Stir-fried glass noodles made from sweet potato starch, mixed with vegetables, mushrooms, and sometimes beef.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Dolsot Bibimbap.jpeg" alt="Dolsot Bibimbap ">
+									<div class="menu_content">
+										<h4>Dolsot Bibimbap <span>$15</span></h4>
+										<p>Similar to regular bibimbap, but served in a hot stone pot (dolsot), creating a crispy layer of rice at the bottom.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Doenjang Jjigae.jpeg" alt="Doenjang Jjigae">
+									<div class="menu_content">
+										<h4>Doenjang Jjigae  <span>$24</span></h4>
+										<p>A fermented soybean paste stew with tofu, vegetables, and sometimes meat or seafood.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="single_menu">
+									<img src="Tteokbokki.jpeg" alt="Tteokbokki ">
+									<div class="menu_content">
+										<h4>Tteokbokki   <span>$24</span></h4>
+										<p>Spicy and sweet rice cakes stir-fried with gochujang sauce, fish cakes, and occasionally boiled eggs.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Haemul Pajeon.jpeg" alt="Haemul Pajeon ">
+									<div class="menu_content">
+										<h4>Haemul Pajeon  <span>$20</span></h4>
+										<p>Seafood and green onion pancake, often enjoyed as a savory and satisfying lunch option.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Kimbap.jpeg" alt="Kimbap">
+									<div class="menu_content">
+										<h4>Kimbap  <span>$45</span></h4>
+										<p>Seaweed-wrapped rice rolls filled with vegetables, pickled radish, and various proteins like tuna or bulgogi.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Sundubu Jjigae.jpeg" alt="Sundubu Jjigae">
+									<div class="menu_content">
+										<h4>Sundubu Jjigae  <span>$24</span></h4>
+										<p>A hot and spicy stew made with uncurdled tofu, vegetables, sometimes meat, and gochujang or gochugaru (red chili powder).</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single_menu">
+									<img src="Samgyeopsal.jpeg" alt="Samgyeopsal ">
+									<div class="menu_content">
+										<h4>Samgyeopsal   <span>$24</span></h4>
+										<p>Grilled pork belly slices usually served with garlic, green onions, ssamjang, and lettuce leaves for wrapping.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Dak Galb.jpeg" alt="Dak Galbi ">
+									<div class="menu_content">
+										<h4>Dak Galbi  <span>$20</span></h4>
+										<p>Spicy stir-fried chicken with vegetables and often sweet potato noodles.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Kimchi Fried Rice.jpeg" alt="Kimchi Fried Rice ">
+									<div class="menu_content">
+										<h4>Kimchi Fried Rice   <span>$45</span></h4>
+										<p>Fried rice made with kimchi, vegetables, and sometimes meat or seafood.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Haemul Pajeon.jpeg" alt="Haemul Pajeon">
+									<div class="menu_content">
+										<h4>Haemul Pajeon  <span>$24</span></h4>
+										<p>Seafood and green onion pancake, a popular and savory option for dinner.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="single_menu">
+									<img src="Bossam.jpeg" alt="Bossam">
+									<div class="menu_content">
+										<h4>Bossam  <span>$24</span></h4>
+										<p>Boiled pork belly slices served with a variety of condiments and wrapped in lettuce leaves.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Yukgaejang .jpeg" alt="Yukgaejang ">
+									<div class="menu_content">
+										<h4>Yukgaejang  <span>$20</span></h4>
+										<p>Spicy beef soup with shredded beef, vegetables, and noodles.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Jeyuk Bokkeum.jpeg" alt="Jeyuk Bokkeum">
+									<div class="menu_content">
+										<h4>Jeyuk Bokkeum  <span>$45</span></h4>
+										<p>Spicy stir-fried pork with gochujang, garlic, ginger, and vegetables.</p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="Korean BBQ.jpeg" alt="Korean BBQ ">
+									<div class="menu_content">
+										<h4>Korean BBQ   <span>$24</span></h4>
+										<p>Grilled meats, such as beef, pork, or chicken, cooked at the table. The grilled meat is often accompanied by various side dishes and dipping sauces.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="shoppingcart.html" class=" menu_btn btn btn-danger">go to cart!</a>
+			</div>
+		</div>
+	</section>
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+</body>
+</html>
