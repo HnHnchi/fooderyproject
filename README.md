@@ -1,5 +1,5 @@
 
-Got it! Here's the updated README template with features including user profiles and a blog:
+
 
 Full-stack Website for Various Restaurants
 This project is a full-stack website for various restaurants, developed using HTML, Bootstrap, JavaScript for the frontend, and the .NET framework for the backend.
